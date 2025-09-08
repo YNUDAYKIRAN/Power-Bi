@@ -1,39 +1,93 @@
 # Power-Bi
+📊 Power BI – Superstore Sales Dashboard  
 
-1. Map Visualization: Unlocking Geographical Insights
-Going Deeper: Power BI's map visualizations are incredibly dynamic. They aren't just static images; they can be interactive. Users can zoom in and out, pan across the globe, and click on a specific country or region to filter other visualizations on the same dashboard. This is often achieved using Power BI's "Slicer" functionality, which allows users to select a region to filter all the other charts and tables on the page.
+## 📌 Project Overview  
+This repository contains my **Power BI project** based on the **Superstore dataset (USA market)**.  
+The project demonstrates the **end-to-end data analytics workflow** — from **data cleaning and transformation** in Power Query, to **data modeling with DAX**, and finally to **building interactive visualizations and dashboards**.  
 
-The Power of Color and Size: Beyond simply showing data on a map, Power BI allows you to use color saturation and bubble size to represent different values. For example:
+---
 
-Color Saturation: A darker color might represent a higher value (e.g., higher profit). This is ideal for quickly identifying high-performing areas.
+## 🎯 Objectives  
+- Learn and apply all major **Power BI visualization tools**.  
+- Use **Power Query** to clean, transform, and prepare raw data.  
+- Create **data models and DAX measures** for meaningful insights.  
+- Develop a professional **dashboard** to analyze sales, profit, and customer trends.  
 
-Bubble Size: Larger bubbles can represent larger values (e.g., total sales amount). This is useful for visually comparing the magnitude of a metric across regions.
+---
 
-Typical Use Case: In your class_1_map_country.pbix file, the map likely serves as a starting point. A user might click on "United States" on the map, and the bar charts and tables on the same page would instantly update to show data only for that country, providing a focused analysis.
+## 🔧 Power BI Concepts  
 
-2. Bar Chart Visualization: Making Comparisons Clear
-Going Deeper: Bar charts are the workhorse of data visualization because they excel at direct comparisons. Power BI offers several types of bar charts, including:
+### 🔹 Power Query (Data Cleaning & Transformation)  
+- Remove duplicates and null values.  
+- Change data types (text, date, numbers).  
+- Split and merge columns for clarity.  
+- Append and merge queries.  
+- Create conditional columns (e.g., Profit Category).  
+- Filter and reshape datasets for analysis.  
 
-Clustered Bar/Column Charts: These are great for comparing multiple series of data. For example, you could compare sales and profit for each product category side-by-side.
+### 🔹 Data Modeling & DAX  
+- Build relationships between **Fact** and **Dimension** tables.  
+- Use **Star Schema** for efficient modeling.  
+- Create calculated columns & measures:  
+  - Total Sales = `SUM(Sales)`  
+  - Total Profit = `SUM(Profit)`  
+  - Profit Margin = `SUM(Profit) / SUM(Sales)`  
+  - YTD / MTD sales performance  
+- Define KPIs to track business performance.  
 
-Stacked Bar/Column Charts: These are used to show the proportion of a whole. For instance, you could show total sales for each country, with the bar stacked by customer segment (Consumer, Corporate, Home Office) to see the contribution of each.
+### 🔹 Visualizations in Power BI  
+- **Bar & Column Charts** – Sales by category/region.  
+- **Line & Area Charts** – Trends over time.  
+- **Pie & Donut Charts** – Market share analysis.  
+- **Tree Map** – Contribution by sub-category.  
+- **Scatter Plot** – Discount vs Profit correlation.  
+- **Map Visuals** – Geographic sales distribution.  
+- **KPI Cards** – Key metrics (Sales, Profit, Orders).  
+- **Tables & Matrix** – Detailed reports with drill-downs.  
+- **Slicers & Filters** – Interactive controls for users.  
 
-100% Stacked Bar/Column Charts: These are similar to stacked charts but normalize the bars to 100%, which is perfect for comparing proportions without worrying about the total value.
+---
 
-Interactive Features: Power BI allows you to hover over a bar to see the exact value (a "tooltip"). You can also click on a bar to filter other visualizations. For example, clicking on the "Technology" bar in a bar chart would filter the map and tables to only show data related to technology sales.
+## 📂 Repository Structure  
+Power-BI/
+├── datasets/ # Superstore dataset (CSV/Excel)
+├── dashboards/ # Final Power BI dashboard (.pbix)
+├── reports/ # Exported reports (PDF/PNG)
+└── README.md # Documentation
 
-Typical Use Case: Your class_2_bar.pbix file likely uses these charts to provide a quick, intuitive view of performance across various dimensions like product categories, customer segments, or even different years, making it easy to identify trends and outliers.
+yaml
+Copy code
 
-3. Table Visualization: Precision and Detail
-Going Deeper: While charts provide a high-level overview, tables are essential for precision. Power BI's table visualization is more than just a grid; it's a powerful tool for detailed analysis.
+---
 
-Key Features:
+## 📸 Dashboard Preview  
+*(Upload your dashboard image in `dashboards/` and link here)*  
 
-Conditional Formatting: You can use conditional formatting to highlight specific cells based on their value. For instance, you could color all profit values below zero in red to instantly identify losses.
+```markdown
+![Dashboard Preview](dashboards/dashboard_screenshot.png)
+🚀 Insights from the Dashboard
+Identified top-performing categories and regions.
 
-Drill-Down Capabilities: You can add a hierarchy to your table (e.g., Year > Quarter > Month > Day) and use the drill-down feature to expand or collapse data rows, providing a dynamic way to explore the data at different levels of granularity.
+Analyzed profitability impact of discounts.
 
-Search Functionality: In a large table, a user can search for a specific value (e.g., a customer name or product ID) to find information quickly.
+Discovered regional sales variations across the US.
 
-Typical Use Case: The Class_3_Tables.pbix file is likely the "data detail" page of your report. After a user has identified a specific trend on a map or bar chart, they would go to the table view to see the individual records that make up that trend. This is where a user would look for the specific order number, customer name, and exact profit margin for a particular sale.
+Highlighted customer segments driving revenue.
 
+Suggested strategies to improve profitability.
+
+🛠️ Tools & Technologies
+Power BI Desktop – Visualization & Dashboard Design
+
+Power Query Editor – Data Cleaning & Transformation
+
+DAX (Data Analysis Expressions) – Measures & KPIs
+
+Superstore Dataset (USA Market) – Sample Business Data
+
+👨‍💻 Author
+Y. Naga Uday Kiran
+
+B.Tech (ECE), Dr. B. R. Ambedkar University
+
+Passionate about Data Analytics & Visualization with Power BI
